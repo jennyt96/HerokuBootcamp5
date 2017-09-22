@@ -11,7 +11,7 @@ var path = require('path'),
 
 module.exports.init = function() {
   //connect to database
-  mongoose.connect(process.env.uri);
+  mongoose.connect(process.env.config);
 
   //initialize app
   var app = express();

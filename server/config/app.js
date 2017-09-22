@@ -4,7 +4,7 @@ var config = require('./config'),
 
 module.exports.start = function() {
   var app = express.init();
-  app.listen(process.env.uri || 8080, function() {
-    console.log('App listening on port', process.env.uri || 8080);
+  app.listen(process.env.config || 8080, function() {
+    console.log('App listening on port', process.env.config || 8080);
   });
 };
